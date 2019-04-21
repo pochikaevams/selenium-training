@@ -15,7 +15,6 @@ public class TestBase {
 
     @Before
     public void setUp() {
-
         driver = new ChromeDriver();
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
