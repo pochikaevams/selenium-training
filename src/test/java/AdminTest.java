@@ -1,6 +1,9 @@
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import selenium.training.TestBase;
+
+import java.util.List;
 
 public class AdminTest extends TestBase {
 
@@ -10,123 +13,19 @@ public class AdminTest extends TestBase {
         driver.findElement(By.name("username")).sendKeys("admin");
         driver.findElement(By.name("password")).sendKeys("admin");
         driver.findElement(By.name("login")).click();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[1]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[1]/ul[@class='docs']/li[@id='doc-template']")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[1]/ul[@class='docs']/li[@id='doc-logotype']")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[2]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[2]/ul[@class='docs']/li[1]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[2]/ul[@class='docs']/li[2]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[2]/ul[@class='docs']/li[3]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[2]/ul[@class='docs']/li[4]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[2]/ul[@class='docs']/li[5]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[2]/ul[@class='docs']/li[6]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[2]/ul[@class='docs']/li[7]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[2]/ul[@class='docs']/li[8]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[2]/ul[@class='docs']/li[9]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[3]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[4]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[5]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[5]/ul[@class='docs']/li[1]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[5]/ul[@class='docs']/li[2]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[5]/ul[@class='docs']/li[3]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[6]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[7]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[7]/ul[@class='docs']/li[1]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[7]/ul[@class='docs']/li[2]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[8]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[8]/ul[@class='docs']/li[1]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[8]/ul[@class='docs']/li[2]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[8]/ul[@class='docs']/li[3]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[8]/ul[@class='docs']/li[4]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[8]/ul[@class='docs']/li[5]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[8]/ul[@class='docs']/li[6]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[8]/ul[@class='docs']/li[7]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[9]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[9]/ul[@class='docs']/li[1]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[9]/ul[@class='docs']/li[2]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[10]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[11]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[11]/ul[@class='docs']/li[1]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[11]/ul[@class='docs']/li[2]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[11]/ul[@class='docs']/li[3]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[12]")).click();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[12]/ul[@class='docs']/li[1]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[12]/ul[@class='docs']/li[2]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[12]/ul[@class='docs']/li[3]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[12]/ul[@class='docs']/li[4]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[12]/ul[@class='docs']/li[5]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[12]/ul[@class='docs']/li[6]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[12]/ul[@class='docs']/li[7]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[12]/ul[@class='docs']/li[8]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[13]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[14]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[14]/ul[@class='docs']/li[1]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[14]/ul[@class='docs']/li[2]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[15]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[15]/ul[@class='docs']/li[1]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[15]/ul[@class='docs']/li[2]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[15]/ul[@class='docs']/li[3]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[16]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[17]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
-        driver.findElement(By.xpath("//ul[@id='box-apps-menu']/li[17]/ul[@class='docs']/li[1]")).click();
-        driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
+
+        List<WebElement> menus = driver.findElements(By.id("app-"));
+        int sizeOfMenu = menus.size();
+        for (int i = 0; i < sizeOfMenu; i++) {
+            driver.findElements(By.id("app-")).get(i).click();
+            driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
+            List<WebElement> subMenu = driver.findElements(By.xpath("//li[contains(@id,'doc-')]"));
+            int sizeOfSubMenu = subMenu.size();
+            for (int j = 0; j < sizeOfSubMenu; j++) {
+                driver.findElements(By.xpath("//li[contains(@id,'doc-')]")).get(j).click();
+                driver.findElement(By.xpath("//td[@id='content']/h1")).isDisplayed();
+            }
+        }
     }
 }
 
