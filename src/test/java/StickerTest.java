@@ -14,7 +14,9 @@ public class StickerTest extends TestBase {
         List<WebElement> items = driver.findElements(By.xpath("//li[contains(@class,'product')]"));
         int itemsSize = items.size();
         for (int i = 0; i < itemsSize; i++) {
-            int countOfStickers = items.get(i).findElements(By.xpath(".//div[contains(@class,'sticker')]")).size();
+            WebElement item = items.get(i);
+            List<WebElement> stickers = item.findElements(By.xpath(".//div[contains(@class,'sticker')]"));
+            int countOfStickers = stickers.size();
             Assert.assertEquals("Количество стикеров не равно 1", 1, countOfStickers);
         }
     }
