@@ -20,7 +20,7 @@ public class RegistrationTest extends TestBase {
         driver.findElement(By.xpath("//li[text()='United States']")).click();
 
         Random random = new Random();
-        String randomEmail = "tester1".concat(String.valueOf(random.nextInt(1000)).concat("@gmail.com"));
+        String randomEmail = "tester1".concat(String.valueOf(random.nextInt(10000)).concat("@gmail.com"));
         driver.findElement(By.name("email")).sendKeys(randomEmail);
 
         driver.findElement(By.name("phone")).sendKeys("+135676543459");
