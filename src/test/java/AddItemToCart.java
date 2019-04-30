@@ -25,6 +25,7 @@ public class AddItemToCart extends TestBase {
             }
             driver.findElement(By.name("add_cart_product")).click();
             wait.until(ExpectedConditions.alertIsPresent());
+            //У меня приходит алерт с ошибкой, так что эти методы нужны
             Alert alert = driver.switchTo().alert();
             alert.accept();
             driver.findElement(By.id("cart")).click();
