@@ -16,10 +16,10 @@ public class TestBase {
     @Before
     public void setUp() {
         driver = new ChromeDriver();
-        driver.manage().timeouts().pageLoadTimeout(90, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
+//        driver.manage().timeouts().pageLoadTimeout(90, TimeUnit.SECONDS);
+//        driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
         driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, 90);
+        wait = new WebDriverWait(driver, 100);
 
         Runtime.getRuntime().addShutdownHook(
                 new Thread(() -> {
