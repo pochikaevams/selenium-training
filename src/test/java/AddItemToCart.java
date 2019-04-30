@@ -13,7 +13,7 @@ import java.util.List;
 public class AddItemToCart extends TestBase {
 
     @Test
-    public void addNewItemToCartTest() throws InterruptedException {
+    public void addNewItemToCartTest() {
         for (int i = 1; i < 4; i++) {
             driver.navigate().to("http://localhost:8080/litecart/en/");
             List<WebElement> items = driver.findElements(By.xpath("//li[@class = 'product column shadow hover-light']"));
